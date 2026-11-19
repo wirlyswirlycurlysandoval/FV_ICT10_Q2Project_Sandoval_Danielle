@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <style>
+          body{
+            font-family: 'Gill Sans';
+            background-color: rgb(241, 180, 175);
+            background-size: cover;
+        }
+       .container {
+           padding: 30px;
+            border-radius: 15px;
+            margin: auto;
+            width: 900px;
+            box-shadow: 0 4px 10px rgb(0, 0, 0);
+            background-color: rgb(142, 149, 70);
+            color:  rgb(254, 254, 254);
+            text-align: center;
+       }
+
+
+       .form-container {
+           padding: 30px;
+            border-radius: 15px;
+            margin: auto;
+            width: 900px;
+            background-color:rgb(242, 136, 146);
+            color:  rgb(254, 254, 254);
+            text-align: left;
+       }
+
+
+       #header2{
+        color: rgb(108, 155, 118);
+        font-family: "Trebuchet MS", sans-serif;
+       }
+
+        #header{
+        font-family: 'Gill Sans';
+        color: rgb(242, 136, 146);
+        font-weight: bold;
+       }
+
+       #output2{
+         font-family: "Trebuchet MS", sans-serif;
+       }
+
+       #copyright{
+        color: white;
+        background-color: rgb(65, 32, 32);
+       }
+
+       #logo2{
+        display: block;
+        width: 70px;
+        height: auto;
+        margin: 10px auto;
+       }
+
+        #logo1{
+        display: block;
+        width: 70px;
+        height: auto;
+        margin: 10px auto;
+       }
+
+       .headers{
+        padding: 30px;
+            border-radius: 15px;
+            margin: auto;
+            width: 1000px;
+            background-color:rgb(233, 226, 155);
+            color:  rgb(254, 254, 254);
+            text-align: left;
+            color:rgb(108, 155, 118)
+       }
+
+    </style>
+
+
+    <title>Checker</title>
+</head>
+
+
+<body>
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#"><img src="capy.png" alt="Capybara logo" id="logo1"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../Seatwork1/index.html">
+                Home
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../SkillsTest/index.html">Element Checker</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Drill2/index.html">Club Members</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../MeetTheCreator/index.html">Meet The Creator</a>
+        </li>
+      </ul>
+
+       </div>
+  </div>
+</nav>
+
+<br><br>
+
+<div class="headers">
+ <img src="zephyr.png" alt="Zephyr logo" id="logo2">
+    <h1 id="header" class="text-center">Dance Club Checker</h1>
+    <h5 id="header2" class="text-center">Candidate Verification System</h5>
+        <br>
+
+    <div class="form-container">
+
+        <form>
+
+            <input type="text" id="first" class="form-control" placeholder="First Name">
+            <br>
+
+            <input type="text" id="last" class="form-control" placeholder="Last Name">
+            <br>
+
+            <div class="text-center">
+            <button type="button" id="btncheck" py-click="checker_result" class="btn btn-light "> ENTER</button>
+            </div>
+
+        </form>
+
+
+    </div>
+</div>
+    <br>
+    <br>
+
+
+    <div id="output2" class="text-center container">
+
+
+        Your checker results will appear here.
+
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
